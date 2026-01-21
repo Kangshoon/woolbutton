@@ -1,60 +1,69 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: serif;
   color: #111;
 }
 
-/* Header */
-.site-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 0;
-}
-
-.logo {
-  width: 240px;   /* ← 이게 안정적인 기본값 */
-  height: auto;
-}
-
-/* Hero */
-.hero {
-  min-height: calc(100vh - 120px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* 상단 헤더 */
+.top-header {
   text-align: center;
+  padding: 40px 20px 20px;
 }
 
-.hero h1 {
-  font-size: 48px;
-  letter-spacing: 0.15em;
-  margin-bottom: 16px;
+.top-header h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
 }
 
-.hero p {
+.top-header p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* 히어 섹션 */
+.hero {
+  min-height: 100vh;
+  background: url("hero.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  color: #fff;
+  max-width: 900px;
+}
+
+/* 로고 */
+.hero-logo {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+/* 타이틀 */
+.hero-content h2 {
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* 설명 */
+.desc-en,
+.desc-kr {
   font-size: 14px;
-  letter-spacing: 0.08em;
-  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-  .logo {
-    width: 180px;
-  }
-}
-
-  .hero h1 {
-    font-size: 32px;
-  }
