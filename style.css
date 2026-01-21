@@ -22,8 +22,7 @@ body {
 }
 
 .logo {
-  width: 33%;          /* 🔥 여기서 로고 크기 조절 */
-  max-width: 200px;    /* 너무 커지지 않게 제한 */
+  width: 240px;   /* ← 이게 안정적인 기본값 */
   height: auto;
 }
 
@@ -52,11 +51,10 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
   .logo {
-    width: 50%;
-    max-width: 160px;
+    width: 180px;
   }
+}
 
   .hero h1 {
     font-size: 32px;
   }
-}
