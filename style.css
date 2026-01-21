@@ -1,90 +1,53 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: serif;
-  color: #111;
-}
-
 /* 상단 헤더 */
-/* HEADER */
 .site-header {
-  position: relative;
-  width: 100%;
-  height: 96px;              /* 헤더 높이 고정 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;   /* 수직 중앙 */
-  padding: 0;                /* 내려가던 원인 */
-  margin: 0;
-  background: #fff;
-  z-index: 10;
+  text-align: center;
+  padding: 28px 0 32px;
+}
+
+.logo-header {
+  height: 28px;      /* 상단용은 작게 */
 }
 
 .logo-link {
   display: inline-block;
-  text-decoration: none;
-}
-
-.logo {
-  height: 36px;              /* 로고 크기 */
-  width: auto;
-  display: block;
 }
 
 .coming-soon {
-  margin-top: 40px;
-  margin-bottom: 30px;   /* 👈 여기 */
+  margin-top: 8px;
+  margin-bottom: 40px;
   font-size: 22px;
-  font-weight: 500;
   letter-spacing: 0.12em;
-  color: #111;
-  line-height: 1;
 }
 
-/* 히어 섹션 */
+/* 히어 */
 .hero {
+  background: url("hero.jpg") center/cover no-repeat;
   min-height: 100vh;
-  background: url("hero.jpg") center / cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 120px 20px 160px;
+  box-sizing: border-box;
   text-align: center;
-  padding: 60px 20px;
+  color: white;
 }
 
-.hero-content {
-  color: #fff;
-  max-width: 900px;
-}
-
-/* 로고 */
 .hero-logo {
-  width: 120px;
-  margin-bottom: 30px;
+  width: 120px;   /* 가운데 심볼 로고 */
+  margin-bottom: 32px;
 }
 
-/* 타이틀 */
-.hero-content h2 {
-  font-size: 42px;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 48px;
+  letter-spacing: 0.18em;
+  margin-bottom: 12px;
 }
 
 .tagline {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 16px;
+  margin-bottom: 40px;
+  opacity: 0.9;
 }
 
-/* 설명 */
-.desc-en,
-.desc-kr {
+.desc {
   font-size: 14px;
   line-height: 1.8;
-  margin-bottom: 20px;
-  opacity: 0.9;
+  opacity: 0.85;
 }
